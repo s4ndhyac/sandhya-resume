@@ -17,7 +17,7 @@ This template attempts to **look clean**, highlight **details**, be a **single p
 
 ## Dependencies
 
-1. Compiles only with **XeTeX** and required **BibTex** for compiling publications and the .bib filetype.
+1. Compiles only with **XeTeX** and requires **BibTex** for compiling publications and the .bib filetype.
 2. Uses fonts that are usually only available to **Mac** users such as Helvetica Neue Light.
 
 ## Availability
