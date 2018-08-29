@@ -1,0 +1,234 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{resume_template_preamble}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\rfoot{Page \thepage \hspace{1pt}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{}{Sandhya Chandramohan}{ \urlstyle{same}\url{http://sandhyachandramohan.in} \\
+\href{mailto:sandhyc@uci.edu}{sandhyc@uci.edu} | 000.000.0000
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of \\ California, Irvine}
+\descript{Master's in Computer Science}
+\location{Expected Dec 2019 | Irvine, CA \\ Cum. GPA: N/A}
+\sectionsep
+\subsection{Indian Institute of \\
+Technology, Madras}
+\descript{B.Tech in Biotechnology}
+\location{Grad. July 2014 | Chennai, India \\ Cum. GPA: 8.07/10}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certification}
+\subsection{ConsenSys Academy}
+\descript{Blockchain Developer}
+Full Scholarship - Top 100/1000 \\
+\location{Expected: Sep 2018 \\ Grade: N/A}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HACKATHONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hackathons}
+\runsubsection{Blockchain India Week \\ Hackathon} 
+\location{| May 2017}
+\descript{Runner-up}
+Placed 2\textsuperscript{nd}/15 Teams \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/s4ndhyac}{\custombold{s4ndhyac}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/sandhyachandramohan}{\custombold{sandhyachandramohan}} \\
+Twitter://  \href{https://twitter.com/s4ndhya}{\custombold{@s4ndhya}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Coursework
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Algorithms \\
+Data Management \\
+Artificial Intelligence\\
+Internet of Things \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+\location{Over 5000 lines:}
+C\# \textbullet{}   Python \textbullet{} Solidity \textbullet{} SQL \textbullet{} LINQ \\
+\location{Over 1000 lines:}
+C++ \textbullet{} C \textbullet{} JavaScript \textbullet{} HTML \textbullet{} CSS
+\sectionsep
+\subsection{Frameworks/ Libraries}
+\location{Extensive}
+.NET \textbullet{} Web2Py \textbullet{} Truffle \\
+\location{Comfortable}
+React.js \textbullet{} Bootstrap
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Senior Member of Technical Staff}
+\descript{| Capital Float}
+\location{May 2017 – Aug 2018 | Mumbai, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Developed \textbf{Amazon Khata}, for instant loans at Checkout on \textbf{Amazon.com} \\ by Capital Float, used daily by millions of people in India \item Pioneered the Publish-Subscribe Messaging pattern to scale the system 10x \item Implemented Distributed Locking using Redis to handle race conditions in a multi-user web application, reducing such occurrences to zero \end{tightemize}
+\sectionsep
+
+\runsubsection{Member of Technical Staff}
+\descript{| Capital Float}
+\location{May 2016 – May 2017 | Mumbai, India}
+\begin{tightemize}
+\item Engineered a thread-safe implementation, synchronizing critical operations with mutex objects to
+enable 100\% real-time processing of all cash flows
+\item Increased productivity by 3x and reduced Operations Expenditure by 55\%, automating workflows through a network of Crons and Schedulers \item Improved database performance and ensured 99.99\% database availability by setting up MySQL Master-Slave Replication \end{tightemize}
+\sectionsep
+
+\runsubsection{Software Developer}
+\descript{| Capital Float}
+\location{May 2015 – May 2016 | Mumbai, India}
+\begin{tightemize}
+\item Redesigned a Windows Desktop application in the Singleton pattern to a multi-tier architecture Web Application following the MVC pattern \item Spearheaded the Unit of Work development pattern to carry out operations comprising a business process as one atomic transaction \item Ensured fast development cycles and codebase robustness by integrating the NUnit and Moq libraries for Unit Testing and Mocking \end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{\href{https://github.com/s4ndhyac/bountyDApp}{BountyDApp}}
+\descript{| Decentralised Application for Bounty Programs}
+\location{Aug 2018 – Sep 2018}
+\begin{tightemize}
+\item Architected and developed a DApp on the Ethereum Blockchain, writing Smart Contracts between the Bounty Creator and Bounty Hunter \item Adopted the Checks-Effects-Interactions Pattern and the Circuit Breaker Pattern to mitigate against known attacks and ensure secure code \end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://github.com/s4ndhyac/employment-contract-dapp}{Roji}}
+\descript{| Decentralised Financial Inclusion Platform}
+\location{Apr 2017 – May 2017}
+\begin{tightemize}
+\item Lead the development of a platform for the 600 million strong informal work economy in India, through Smart Contracts between the Employer and Employee
+\item Implemented an Escrow mechanism for salary transfer
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Indian Institute of Science}
+\descript{| Summer Research Fellow}
+\location{May 2012 – July 2012 | Bengaluru, India}
+Created a pattern-matching algorithm using Enhanced Suffix Arrays to find CRISPRs (Clustered Regularly Interspersed Short Palindromic Repeats) in genome sequences 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2016 & 1\textsuperscript{st}/10 Teams & Capital Float Tech-Olympics \\
+2016	     & 1\textsuperscript{st}/50  & Founder's Institute Ecosystem Scholarship\\
+2015	     & Top 1\% of 1 million  & Indian Civil Services Preliminary Examination\\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
